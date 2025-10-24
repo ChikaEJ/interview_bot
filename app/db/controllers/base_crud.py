@@ -4,7 +4,7 @@ from pydantic import BaseModel
 from sqlalchemy.ext.asyncio import AsyncSession
 from sqlalchemy import select, update, delete
 
-from db.schemas.generics import CreateSchemaType, ModelType, ReadSchemaType
+from app.db.schemas.generics import CreateSchemaType, ModelType, ReadSchemaType
 
 
 class BaseCRUD(Generic[ModelType, CreateSchemaType, ReadSchemaType]):

@@ -1,7 +1,7 @@
 from datetime import datetime
 from pydantic import BaseModel, Field
 
-from db.schemas.base_schemas import BaseSchema
+from app.db.schemas.base_schemas import BaseSchema
 
 
 class ProgressCreate(BaseModel):

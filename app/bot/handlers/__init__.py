@@ -1,7 +1,7 @@
 from aiogram import Dispatcher
 from aiogram.filters import CommandStart
 
-from bot.selected.selected import on_start
+from app.bot.selected.selected import on_start
 
 
 def register_handlers(dp: Dispatcher):

@@ -1,6 +1,6 @@
-from db.controllers.base_crud import BaseCRUD
-from db.models.question_model import Question
-from db.schemas.question_schemas import QuestionCreate, QuestionRead
+from app.db.controllers.base_crud import BaseCRUD
+from app.db.models.question_model import Question
+from app.db.schemas.question_schemas import QuestionCreate, QuestionRead
 
 
 class QuestionController(BaseCRUD[Question, QuestionCreate, QuestionRead]):

@@ -3,15 +3,15 @@ from sqlalchemy import Float, ForeignKey, Integer, Text, \
     UniqueConstraint
 from sqlalchemy.orm import Mapped, mapped_column, relationship
 
-from core.db import Base
+from app.core.db import Base
 
 
 class Progress(Base):
 
     user_id: Mapped[int] = mapped_column(
-        ForeignKey("users.id", ondelete="CASCADE"), nullable=False)
+        ForeignKey("user.id", ondelete="CASCADE"), nullable=False)
     question_id: Mapped[int] = mapped_column(
-        ForeignKey("questions.id", ondelete="CASCADE"), nullable=False)
+        ForeignKey("question.id", ondelete="CASCADE"), nullable=False)
 
     score: Mapped[float] = mapped_column(Float, nullable=False)  # 0.0–1.0
     is_correct: Mapped[bool] = mapped_column(default=False)

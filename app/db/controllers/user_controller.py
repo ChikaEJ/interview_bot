@@ -1,6 +1,6 @@
-from db.controllers.base_crud import BaseCRUD
-from db.models.user_model import User
-from db.schemas.user_schemas import UserCreate, UserRead
+from app.db.controllers.base_crud import BaseCRUD
+from app.db.models.user_model import User
+from app.db.schemas.user_schemas import UserCreate, UserRead
 
 
 class UserController(BaseCRUD[User, UserCreate, UserRead]):

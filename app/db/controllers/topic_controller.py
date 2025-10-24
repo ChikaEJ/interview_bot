@@ -1,6 +1,6 @@
-from db.controllers.base_crud import BaseCRUD
-from db.models.topic_model import Topic
-from db.schemas.topoc_schemas import TopicCreate, TopicRead
+from app.db.controllers.base_crud import BaseCRUD
+from app.db.models.topic_model import Topic
+from app.db.schemas.topoc_schemas import TopicCreate, TopicRead
 
 
 class TopicController(BaseCRUD[Topic, TopicCreate, TopicRead]):

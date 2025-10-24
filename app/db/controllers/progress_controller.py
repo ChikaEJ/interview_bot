@@ -1,6 +1,6 @@
-from db.controllers.base_crud import BaseCRUD
-from db.models.progres_model import Progress
-from db.schemas.progress_schemas import ProgressCreate, ProgressRead
+from app.db.controllers.base_crud import BaseCRUD
+from app.db.models.progres_model import Progress
+from app.db.schemas.progress_schemas import ProgressCreate, ProgressRead
 
 
 class ProgressController(BaseCRUD[Progress, ProgressCreate, ProgressRead]):

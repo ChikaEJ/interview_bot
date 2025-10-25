@@ -10,6 +10,7 @@ class Settings(BaseSettings):
     POSTGRES_PASSWORD: str
     POSTGRES_HOST: str
     POSTGRES_PORT: int
+    OPENAI_API_KEY: str
 
     model_config = SettingsConfigDict(case_sensitive=True, env_file=".env")
 

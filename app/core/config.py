@@ -11,6 +11,8 @@ class Settings(BaseSettings):
     POSTGRES_HOST: str
     POSTGRES_PORT: int
     OPENAI_API_KEY: str
+    AI_BASE_URL: str
+    AI_MODEL: str
 
     model_config = SettingsConfigDict(case_sensitive=True, env_file=".env")
 
